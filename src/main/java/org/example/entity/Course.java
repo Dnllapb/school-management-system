@@ -1,11 +1,16 @@
 package org.example.entity;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Course {
     private Integer idCourse;
     private String nameCourse;
     private String description;
     private Integer numberCredits;
     private String version;
+
 
     public Course(Integer idCourse, String nameCourse, String description, Integer numberCredits, String version) {
         this.idCourse = idCourse;
@@ -14,6 +19,11 @@ public class Course {
         this.numberCredits = numberCredits;
         this.version = version;
     }
+
+    public Course() {
+    }
+
+
 
     public Integer getIdCourse() {
         return idCourse;
@@ -57,12 +67,8 @@ public class Course {
 
     @Override
     public String toString() {
-        return "Course{" +
-                "idCourse=" + idCourse +
-                ", nameCourse='" + nameCourse + '\'' +
-                ", description='" + description + '\'' +
-                ", numberCredits=" + numberCredits +
-                ", version='" + version + '\'' +
-                '}';
+        return String.format("%-10s| %-10s | %-10s | %-10s | %-10s | %s",
+                getIdCourse(), getNameCourse(),getDescription() ,getDescription(), getNumberCredits(),getVersion());
+
     }
 }

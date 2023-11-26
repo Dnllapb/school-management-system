@@ -1,6 +1,6 @@
 package org.example.entity;
 
-public abstract class Person {
+public class Person {
 
     private Integer id;
     private String name;
@@ -12,6 +12,9 @@ public abstract class Person {
         this.name = name;
         this.last_name = last_name;
         this.birthday = birthday;
+    }
+
+    public Person() {
     }
 
     public Integer getId() {
