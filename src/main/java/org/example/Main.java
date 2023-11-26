@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws StudentEnrolledException
     {
-        Scanner scanner = new Scanner(System.in);
+/*        Scanner scanner = new Scanner(System.in);
         AcademicManager academicManager = new AcademicManager();
         Student student= new Student();
         Course course = new Course();
@@ -70,6 +70,7 @@ public class Main {
 
         }
 
-    }
+    }*/
 
+}
 }
