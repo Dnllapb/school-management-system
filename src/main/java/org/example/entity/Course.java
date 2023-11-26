@@ -23,8 +23,6 @@ public class Course {
     public Course() {
     }
 
-
-
     public Integer getIdCourse() {
         return idCourse;
     }

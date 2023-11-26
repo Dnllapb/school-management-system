@@ -7,7 +7,7 @@ import org.example.exception.StudentEnrolledException;
 public interface ServicesAcademicsI {
    void enrollStudent(Student student);
    void addCourse(Course course);
-   void enrollStudentCourse(Student student, Course course) throws StudentEnrolledException;
-   void unsubscribe (int idStudent,int idCourse);
+   void enrollStudentCourse(Student student, Course course) ;
+   void unsubscribe (Student student, Course course);
 
 }
